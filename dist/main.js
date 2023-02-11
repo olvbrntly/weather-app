@@ -1,1 +1,1 @@
-console.log("hi");
+(()=>{"use strict";!async function(a){let t=await fetch(`http://api.openweathermap.org/geo/1.0/direct?q=${a}}&limit5&appid=47d07c43f6e4181dbf36a31437ebe789`),e=await t.json();!async function(a,t){let e=await fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${a}&lon=${t}&appid=47d07c43f6e4181dbf36a31437ebe789&units=imperial`),i=await e.json();console.log(i)}(e[0].lat,e[0].lon)}(prompt("Enter a location: "))})();
